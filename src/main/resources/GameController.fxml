@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.motionlabyrinth.menu.GameMenuBar?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.motionlabyrinth.GameController">
+    <children>
+        <GameMenuBar fx:id="menuBar" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        </GameMenuBar>
+        <AnchorPane fx:id="gridLayout" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="29.0">
+            <children>
+                <VBox spacing="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <children>
+                        <Label fx:id="inGameTime"/>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" >
+                    <children>
+                        <VBox fx:id="scoreLayout" opacity="0.8" style="-fx-background-color: ghostwhite;" alignment="CENTER" maxHeight="200" maxWidth="300" minHeight="200" minWidth="300" prefHeight="200" prefWidth="300" spacing="10.0">
+                            <children>
+                                <Label alignment="TOP_CENTER" text="mistakes"/>
+                                <Label fx:id="mistakes" text="Label">
+                                    <font>
+                                        <Font size="40.0"/>
+                                    </font>
+                                </Label>
+                                <Label text="time"/>
+                                <Label fx:id="scoreTime" text="Label">
+                                    <font>
+                                        <Font size="40.0"/>
+                                    </font>
+                                </Label>
+                                <Button fx:id="tryAgain" text="try again" mnemonicParsing="false" />
+                            </children>
+                            <padding>
+                                <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"/>
+                            </padding>
+                        </VBox>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
