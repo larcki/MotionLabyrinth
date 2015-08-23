@@ -7,6 +7,11 @@ import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 
+/**
+ * Menu bar with levels items.
+ *
+ * @author lassi
+ */
 public class GameMenuBar extends MenuBar {
 
     private Menu levelsMenu;
